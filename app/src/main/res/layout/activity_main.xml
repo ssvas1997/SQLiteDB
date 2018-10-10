@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/id"
+        android:hint="Enter ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/fname"
+        android:hint="Enter first name"
+        android:layout_below="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/lname"
+        android:hint="Enter last name"
+        android:layout_below="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/marks"
+        android:hint="Enter marks"
+        android:layout_below="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/add"
+        android:text="Add"
+        android:onClick="add"
+        android:layout_below="@+id/marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:onClick="delete"
+        android:layout_below="@+id/marks"
+        android:layout_toRightOf="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/update"
+        android:text="Update"
+        android:onClick="update"
+        android:layout_below="@+id/marks"
+        android:layout_toRightOf="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/show"
+        android:text="Show"
+        android:onClick="show"
+        android:layout_below="@+id/marks"
+        android:layout_toRightOf="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
